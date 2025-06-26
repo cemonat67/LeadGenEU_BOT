@@ -25,9 +25,8 @@ def api_export():
     tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".csv")
     df.to_csv(tmp.name, index=False, encoding="utf-8")
     tmp.close()
-   return send_file(tmp.name, as_attachment=True, download_name="leads_export.csv")
+    return send_file(tmp.name, as_attachment=True, download_name="leads_export.csv")
 
 if __name__ == "__main__":
-    import os
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=True)
