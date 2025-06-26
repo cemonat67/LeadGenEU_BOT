@@ -30,3 +30,9 @@
 2025-06-26 15:34:26,638 - WARNING -  * Debugger is active!
 2025-06-26 15:34:26,734 - INFO -  * Debugger PIN: 854-026-402
 2025-06-26 15:36:21,631 - INFO - 127.0.0.1 - - [26/Jun/2025 15:36:21] "POST /api/export HTTP/1.1" 200 -
+2025-06-26 16:08:11,622 - INFO -  * Detected change in '/Users/Onat/Desktop/LeadGenEU_BOT/backend/lead_generator.py', reloading
+2025-06-26 16:08:11,783 - INFO -  * Restarting with stat
+2025-06-26 16:08:13,221 - WARNING -  * Debugger is active!
+2025-06-26 16:08:13,336 - INFO -  * Debugger PIN: 854-026-402
+2025-06-26 16:38:44,664 - INFO -  * Detected change in '/Users/Onat/Desktop/LeadGenEU_BOT/backend/app.py', reloading
+2025-06-26 16:38:44,859 - INFO -  * Restarting with stat
