@@ -5,6 +5,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
+import email.utils   # EKLENDİ!
 import os
 
 app = Flask(__name__)
@@ -27,6 +28,7 @@ def send_leads_email(leads, to_email):
     msg["From"] = FROM_EMAIL
     msg["To"] = to_email
     msg["Subject"] = "LeadGenEU_BOT: Lead Export"
+    msg["Message-ID"] = email.utils.make_msgid()  # <-- Gmail hatasını önler!
     body = "Merhaba, ekte lead listeniz var. Cem Onat / LeadGenEU_BOT"
     msg.attach(MIMEText(body, "plain"))
 
@@ -50,14 +52,9 @@ def send_leads_email(leads, to_email):
 
 @app.route("/api/search", methods=["POST"])
 def api_search():
-    """
-    Burada demo amaçlı hazır veri dönüyoruz. Gerçek kodda buraya
-    Google API ile lead toplama fonksiyonun bağlanacak.
-    """
     data = request.get_json()
     country = data.get("country", "France")
     max_leads = data.get("max_leads", 2)
-    # Buraya gerçek lead bulma kodunu entegre edeceksin
     results = [
         {
             "company_name": "Test Textile",
@@ -73,14 +70,6 @@ def api_search():
 
 @app.route("/api/email_export", methods=["POST"])
 def api_email_export():
-    """
-    CSV ekli e-posta gönderir.
-    POST json örnek:
-    {
-        "leads": [...],      # Lead listesi (dict dizisi)
-        "to_email": "xxx@yyy.com"  # Gönderilecek adres
-    }
-    """
     data = request.get_json()
     leads = data.get("leads", [])
     to_email = data.get("to_email")
@@ -95,9 +84,6 @@ def api_email_export():
 
 @app.route("/api/download_csv", methods=["POST"])
 def api_download_csv():
-    """
-    Lead listesini doğrudan CSV olarak indirir (API'dan).
-    """
     data = request.get_json()
     leads = data.get("leads", [])
     if not leads:
