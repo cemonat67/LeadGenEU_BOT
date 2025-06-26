@@ -1,0 +1,32 @@
+2025-06-26 15:27:07,594 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-06-26 15:27:07,594 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-26 15:27:07,595 - INFO -  * Restarting with stat
+2025-06-26 15:27:08,673 - WARNING -  * Debugger is active!
+2025-06-26 15:27:08,787 - INFO -  * Debugger PIN: 854-026-402
+2025-06-26 15:29:17,789 - INFO -  * Detected change in '/Users/Onat/Desktop/LeadGenEU_BOT/backend/test_api.py', reloading
+2025-06-26 15:29:17,908 - INFO -  * Restarting with stat
+2025-06-26 15:29:19,470 - WARNING -  * Debugger is active!
+2025-06-26 15:29:19,590 - INFO -  * Debugger PIN: 854-026-402
+2025-06-26 15:32:16,274 - INFO - 🇪🇺 France için lead arama başladı
+2025-06-26 15:32:16,274 - INFO - Arama yapılıyor: fashion wholesale clothing suppliers France
+2025-06-26 15:32:22,770 - INFO - Site taranıyor: https://parisfashionshops.com/en
+2025-06-26 15:32:26,691 - INFO - Site taranıyor: https://brandsgateway.com/blog/wholesale-clothing-suppliers-france/
+2025-06-26 15:32:31,336 - INFO - Site taranıyor: https://www.wholesalefashiontrends.com/
+2025-06-26 15:32:33,305 - INFO - Lead bulundu: Wholesale Fashion Trends | Wholesale Clothing for Boutiques ... - 2 email
+2025-06-26 15:32:35,310 - INFO - Site taranıyor: https://hulaglobal.com/location/clothing-vendors-in-france/
+2025-06-26 15:32:39,598 - INFO - Site taranıyor: https://www.myfashionwholesaler.com/
+2025-06-26 15:32:42,808 - INFO - Site taranıyor: https://www.faire.com/category/Based%20in%20France
+2025-06-26 15:32:45,767 - INFO - Site taranıyor: https://www.myfashionwholesaler.com/wholesale-clothing-suppliers/Women-wholesaler/601917261079/LUCCE
+2025-06-26 15:32:48,841 - INFO - Site taranıyor: https://www.efashion-paris.com/en/
+2025-06-26 15:32:54,426 - INFO - Lead bulundu: Efashion Paris - 1 email
+2025-06-26 15:32:56,427 - INFO - Site taranıyor: https://magnoliafashionwholesale.com/
+2025-06-26 15:33:00,128 - INFO - Site taranıyor: https://lonca.co/blog/european-wholesale-womens-clothing
+2025-06-26 15:33:03,136 - INFO - France - fashion wholesale clothing suppliers: 2 yeni lead
+2025-06-26 15:33:06,141 - INFO - ✅ France tamamlandı: 2 lead bulundu
+2025-06-26 15:33:06,142 - INFO - 127.0.0.1 - - [26/Jun/2025 15:33:06] "POST /api/search HTTP/1.1" 200 -
+2025-06-26 15:34:24,990 - INFO -  * Detected change in '/Users/Onat/Desktop/LeadGenEU_BOT/backend/export_test.py', reloading
+2025-06-26 15:34:25,124 - INFO -  * Restarting with stat
+2025-06-26 15:34:26,638 - WARNING -  * Debugger is active!
+2025-06-26 15:34:26,734 - INFO -  * Debugger PIN: 854-026-402
+2025-06-26 15:36:21,631 - INFO - 127.0.0.1 - - [26/Jun/2025 15:36:21] "POST /api/export HTTP/1.1" 200 -
