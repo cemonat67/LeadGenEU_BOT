@@ -13,6 +13,13 @@ import time
 import logging
 from datetime import datetime
 import os
+import os
+
+# Gerekli klasörleri oluştur (cloud ortamı için)
+os.makedirs("logs", exist_ok=True)
+os.makedirs("data", exist_ok=True)
+os.makedirs("data/daily_reports", exist_ok=True)
+
 import json
 from urllib.parse import urljoin, urlparse
 import random
